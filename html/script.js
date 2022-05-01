@@ -1,4 +1,57 @@
-const keys = {
+var number0Length = 0;
+var numberNLength = 0;
+var letterLength = 0;
+
+if(document.getElementById('style0').checked) {
+  number0Length = 1;
+  numberNLength = 0;
+  letterLength = 1;
+}
+else if(document.getElementById('style1').checked) {
+  number0Length = 1;
+  numberNLength = 0;
+  letterLength = 2;
+}
+else if(document.getElementById('style2').checked) {
+  number0Length = 1;
+  numberNLength = 1;
+  letterLength = 1;
+}
+else if(document.getElementById('style3').checked) {
+  number0Length = 1;
+  numberNLength = 1;
+  letterLength = 2;
+}
+else if(document.getElementById('style1').checked) {
+  number0Length = 1;
+  numberNLength = 2;
+  letterLength = 1;
+}
+else {
+  number0Length = 1;
+  numberNLength = 3;
+  letterLength = 0;
+}
+
+
+function generateFN() {
+  var text = "";
+  var numbers0 = "123456789";
+  var numbersN = "0123456789";
+  var letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+  for (var i = 0; i < 1; i++)
+    text += numbers0.charAt(Math.floor(Math.random() * numbers0.length));
+  for (var j = 0; j < 3; j++)
+    text += numbersN.charAt(Math.floor(Math.random() * numbersN.length));
+  for (var k = 0; k < 0; k++)
+    text += letters.charAt(Math.floor(Math.random() * letters.length));
+  return text;
+}
+
+console.log(generateFN())
+
+
+/*const keys = {
     upperCase: "ABCDEFGHIJKLMNOPQRSTUVWXYZ",
     lowerCase: "abcdefghijklmnopqrstuvwxyz",
     number: "0123456789",
@@ -50,4 +103,4 @@ const keys = {
     document.execCommand("copy");
     textarea.remove();
     alert("Password copied to clipboard");
-  }
+  }*/
