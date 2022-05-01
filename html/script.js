@@ -22,7 +22,7 @@ else if(document.getElementById('style3').checked) {
   numberNLength = 1;
   letterLength = 2;
 }
-else if(document.getElementById('style1').checked) {
+else if(document.getElementById('style4').checked) {
   number0Length = 1;
   numberNLength = 2;
   letterLength = 1;
@@ -33,22 +33,26 @@ else {
   letterLength = 0;
 }
 
-
+var flightnumber = getElementById('flightnumberBox');
 function generateFN() {
-  var text = "";
+  var flightnumber = "";
   var numbers0 = "123456789";
   var numbersN = "0123456789";
   var letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
   for (var i = 0; i < number0Length; i++)
-    text += numbers0.charAt(Math.floor(Math.random() * numbers0.length));
+    flightnumber += numbers0.charAt(Math.floor(Math.random() * numbers0.length));
   for (var j = 0; j < numberNLength; j++)
-    text += numbersN.charAt(Math.floor(Math.random() * numbersN.length));
+    flightnumber += numbersN.charAt(Math.floor(Math.random() * numbersN.length));
   for (var k = 0; k < letterLength; k++)
-    text += letters.charAt(Math.floor(Math.random() * letters.length));
-  return text;
+    flightnumber += letters.charAt(Math.floor(Math.random() * letters.length));
+return flightnumber;
 }
+flightnumberBox.innerHTML = flightnumber;
 
-console.log(generateFN())
+
+//document.getElementById('flightnumber').value = flightnumber;
+
+//console.log(generateFN())
 
 
 /*const keys = {
