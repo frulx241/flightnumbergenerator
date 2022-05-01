@@ -18,31 +18,35 @@
       </div>
       <div>
         <label for="length">Length</label>
-        <input type="number" id="length" min="6" max="20" value="6">
+        <input type="number" id="length" min="3" max="20" value="3">
       </div>
       <div>
         <label for="symbol">Include Symbol</label>
-        <input type="checkbox" id="symbol" checked>
+        <input type="checkbox" id="symbol" unchecked>
+      </div>
+      <div>
+        <label for="number">Include Number</label>
+        <input type="checkbox" id="number" checked>
       </div>
       <div>
         <label for="lowerCase">Include lowerCase</label>
-        <input type="checkbox" id="lowerCase" checked>
+        <input type="checkbox" id="lowerCase" unchecked>
       </div>
       <div>
         <label for="upperCase">Include upperCase</label>
-        <input type="checkbox" id="upperCase" checked>
+        <input type="checkbox" id="upperCase" unchecked>
       </div>
       <div>
-        <input type="radio" name="Option" value="12">Style 1: OPR 1AB
+        <label for="style0"> OPR 1AB </label>
+        <input id="style0" type="radio" name="style">
       </div>
       <div>
-        <input type="radio" name="Option" value="21">Style 2: OPR 12A
+        <label for="style1"> OPR 12AB </label>
+        <input id="style1" type="radio" name="style">
       </div>
       <div>
-        <input type="radio" name="Option" value="22">Style 3: OPR 12AB
-      </div>
-      <div>
-        <input type="radio" name="Option" value="31">Style 4: OPR 12A
+        <label for="style2"> OPR 12A </label>
+        <input id="style2" type="radio" name="style">
       </div>
       <button onclick="createPassword()">Generate Flightnumber</button>
     </div>
