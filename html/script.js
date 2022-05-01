@@ -39,11 +39,11 @@ function generateFN() {
   var numbers0 = "123456789";
   var numbersN = "0123456789";
   var letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-  for (var i = 0; i < 1; i++)
+  for (var i = 0; i < number0Length; i++)
     text += numbers0.charAt(Math.floor(Math.random() * numbers0.length));
-  for (var j = 0; j < 3; j++)
+  for (var j = 0; j < numberNLength; j++)
     text += numbersN.charAt(Math.floor(Math.random() * numbersN.length));
-  for (var k = 0; k < 0; k++)
+  for (var k = 0; k < letterLength; k++)
     text += letters.charAt(Math.floor(Math.random() * letters.length));
   return text;
 }

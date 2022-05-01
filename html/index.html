@@ -4,15 +4,52 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Flightnumber Generator</title>
+  <title>Flight Number Generator</title>
   <link rel="stylesheet" href="style.css">
   <script src="script.js"></script>
 </head>
 
 <body>
+  <div class="body">
+    
+    <div class="box">
+        <h2>Flight Number Generator</h2>
+           <input type="text" name="" placeholder="Flight Number" id="flightnumber" readonly>
+           <div class="radio">
+            <label for="style0"> OPR 1A </label>
+            <input id="style0" type="radio" name="style">
+           </div>
+          <div>
+            <label for="style1"> OPR 1AB </label>
+            <input id="style1" type="radio" name="style">
+          </div>
+          <div>
+            <label for="style2"> OPR 12A </label>
+            <input id="style2" type="radio" name="style">
+          </div>
+          <div>
+            <label for="style3"> OPR 12AB </label>
+            <input id="style3" type="radio" name="style">
+          </div>
+          <div>
+            <label for="style2"> OPR 123A </label>
+            <input id="style2" type="radio" name="style">
+          </div>
+          <div>
+            <label for="style2"> OPR 1234 </label>
+            <input id="style2" type="radio" name="style">
+          </div>
+           <table>
+             <th><div id="button" class="btn1"onclick="genPassword()">Generate</div></th>
+             <th><a  id="button" class="btn2" onclick="copyPassword()">Copy</a></th>
+           </table>
+       </div>
+       </div>
+   
+<!--       
   <div class="container">
     <div class="password-generator">
-      <h2>Flightnumber Generator</h2>
+      <h2>Flight Number Generator</h2>
       <div class="password">
         <p id="passwordBox"></p><i class="far fa-clipboard" onclick="copyPassword()"></i></i>
       </div>
@@ -53,4 +90,4 @@
   </div>
 </body>
 
-</html>
+</html>-->
