@@ -1,6 +1,6 @@
-var number0Length = "";
-var numberNLength = "";
-var letterLength = "";
+var number0Length = 1;
+var numberNLength = 1;
+var letterLength = 1;
 
 if (document.getElementById('style0').checked) {
   number0Length = 1;
@@ -33,10 +33,10 @@ else {
   letterLength = 0;
 }
 
-//const flightnumberBox = document.getElementById("flightnumberBox");
+const flightnumberBox = document.getElementById("flightnumberBox");
 
 function generateFN() {
-  var flightnumber = "";
+  let flightnumber = "";
   var numbers0 = "123456789";
   var numbersN = "0123456789";
   var letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
@@ -53,8 +53,8 @@ function generateFN() {
  return flightnumber;
 
 }
-var elem = document.getElementById("gen");
-elem.addEventListener('click', generateFN);
+const btn = document.getElementById("gen");
+btn.addEventListener("click", generateFN);
 
 flightnumber = generateFN();
 document.getElementById('flightnumberBox').value = flightnumber;
