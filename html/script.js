@@ -39,14 +39,19 @@ function generateFN() {
   var numbers0 = "123456789";
   var numbersN = "0123456789";
   var letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-  for (var i = 0; i < number0Length; i++)
+  for (var i = 0; i < number0Length; i++) {
     flightnumber += numbers0.charAt(Math.floor(Math.random() * numbers0.length));
-  for (var j = 0; j < numberNLength; j++)
+  }
+  for (var j = 0; j < numberNLength; j++){
     flightnumber += numbersN.charAt(Math.floor(Math.random() * numbersN.length));
-  for (var k = 0; k < letterLength; k++)
+  }
+  for (var k = 0; k < letterLength; k++){
     flightnumber += letters.charAt(Math.floor(Math.random() * letters.length));
+  }
 return flightnumber;
 }
+flightnumber = generateFN();
+//document.getElementById('flightnumber').value = flightnumber;
 flightnumberBox.innerHTML = flightnumber;
 
 
