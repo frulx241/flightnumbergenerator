@@ -16,9 +16,9 @@ body {
 .title {
   color: #eeeeee;
   font-family: sans-serif;
-  font-size: 22px;
+  font-size: 28px;
   font-weight: 600;
-  margin-top: 0px;
+  margin-bottom: 20px;
   text-align: left;
 }
 
@@ -28,13 +28,15 @@ body {
   font-size: 16px;
   font-weight: 300;
   margin-top: 10px;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
-.selectio {
-  height: 10px;
-  position: relative;
-  width: 100%;
+.selection {
+  margin-top: 20px;
+  height: 250px;
+  -webkit-column-count: 2;
+  -moz-column-count: 2;
+  column-count: 2;
 }
 
 .box{
@@ -47,23 +49,24 @@ body {
 }
 
 .radio{
-  display: block;
+  display:inline-block;
   border-radius: 5px;
   padding: 5px;
-  text-align: left;
+  text-align: center;
   justify-content:space-between;
   margin: 10px 0;
-  margin-left: 85px;
-  margin-right: 50px;
+  margin-left: 0px;
+  margin-right: 0px;
   font-family: sans-serif;
   color: #ffffff;
   font-size:18px;
   }
+  
 
 .generate {
   background-color: #08d;
   justify-content: space-evenly;
-  border-radius: 12px;
+  border-radius: 5px;
   border: 0;
   box-sizing: border-box;
   color: #eee;
@@ -73,6 +76,8 @@ body {
   margin-top: 20px;
   text-align: center;
   width: 100%;
+  position:relative;
+  bottom: 60px;
   }
   
 .generate:active {
