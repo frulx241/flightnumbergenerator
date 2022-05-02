@@ -1,8 +1,8 @@
-var number0Length = 1;
-var numberNLength = 1;
-var letterLength = 1;
+var number0Length = "";
+var numberNLength = "";
+var letterLength = "";
 
-/*if (document.getElementById('style0').checked) {
+if (document.getElementById('style0').checked) {
   number0Length = 1;
   numberNLength = 0;
   letterLength = 1;
@@ -31,39 +31,36 @@ else {
   number0Length = 1;
   numberNLength = 3;
   letterLength = 0;
-}*/
+}
 
-var elem = document.getElementById('gen');
-elem.addEventListener('click', test);
+//const flightnumberBox = document.getElementById("flightnumberBox");
 
-/*const flightnumberBox = document.getElementById("flightnumberBox");
-//var flightnumber = getElementById('flightnumberBox').value;
 function generateFN() {
   var flightnumber = "";
   var numbers0 = "123456789";
   var numbersN = "0123456789";
   var letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-  for (var i = 0; i < 2; i++) {
+  for (var i = 0; i < number0Length; i++) {
     var rN0 = Math.floor(Math.random() * numbers0.length);
     flightnumber += numbers0.substring(rN0, rN0 +1);
   }
-  for (var j = 0; j < 4; j++){
+  for (var j = 0; j < numberNLength; j++){
     flightnumber += numbersN.charAt(Math.floor(Math.random() * numbersN.length));
   }
   for (var k = 0; k < letterLength; k++){
     flightnumber += letters.charAt(Math.floor(Math.random() * letters.length));
   }
-  document.getElementById('Absatz').value = "Hallo";
-return flightnumber;
+ return flightnumber;
+
 }
-//document.getElementById('Absatz').value = "TEST";
+var elem = document.getElementById("gen");
+elem.addEventListener('click', generateFN);
 
 flightnumber = generateFN();
 document.getElementById('flightnumberBox').value = flightnumber;
-*/
-function test() {
-  document.getElementById("Absatz").innerHTML = "Hallo";
-}
+document.getElementById('Absatz').innerHTML = "Hallo";
+
+
 
 
 
