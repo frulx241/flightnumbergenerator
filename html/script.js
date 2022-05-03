@@ -7,7 +7,7 @@ function generateFN() {
   let flightnumber = "";
   var numbers0 = "123456789";
   var numbersN = "0123456789";
-  var letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+  var letters = "ABCDEFGHJKLMNPQRSTUVWXYZ";
 
   if (document.getElementById('style0').checked) {
     number0Length = 1;
