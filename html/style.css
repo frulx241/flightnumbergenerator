@@ -45,11 +45,11 @@ body {
   background-color: #15172b;
   border-radius: 20px;
   box-sizing: border-box;
-  height: 80vh;
+  height: 500px;
   padding: 20px;
-  width: 80vw;
-  margin-top: 10vh;
-  margin-bottom: 30vh;
+  width: 360px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .radio{
