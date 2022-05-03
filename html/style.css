@@ -43,9 +43,9 @@ body {
   background-color: #15172b;
   border-radius: 20px;
   box-sizing: border-box;
-  height: 500px;
+  height: 80vh;
   padding: 20px;
-  width: 320px;
+  width: 80vw;
 }
 
 .radio{
