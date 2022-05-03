@@ -46,6 +46,8 @@ body {
   height: 500px;
   padding: 20px;
   width: 360px;
+  position: relative;
+  top: 20px;
 }
 
 .radio{
